@@ -126,6 +126,8 @@ node:
   driverRegistrar:
     enabled: true
     image: quay.io/k8scsi/csi-node-driver-registrar:v1.2.0
+    cleanup:
+      image: gcr.io/google_containers/busybox:1.24
 
   extraVolumes: []
 #  - name: foo
